@@ -313,6 +313,9 @@ footer{
         color: $color02;
         font-size: 36px;
         font-weight: 900;
+        &:hover{
+          color:#555555
+        }
       }
     }
   }
