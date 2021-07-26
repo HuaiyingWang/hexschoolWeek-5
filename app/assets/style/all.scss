@@ -437,7 +437,78 @@ footer{
   }
 }
 
-// 
+// 門市據點
+.location-wrap{
+  margin-bottom: 3rem;
+  * {
+    font-size: 18px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  .location-info,
+  .location-map{
+    width: 50%;
+  }
+  .location-select{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    margin-bottom: 1rem;
+    .item{
+      select{
+        width: 325px;
+        margin-left: 10px;
+        padding: 11px 11px 11px 15px;
+      }
+    }
+  }
+  .location-info{
+    .img{
+      height: 260px;
+      overflow: hidden;
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+    h4{
+      color:#212529;
+      font-size: 24px;
+    }
+    h4,
+    ul{
+      padding:12px 24px;
+      border:#00000020 1px solid;
+    }
+    ul{
+      border-top: none;
+      li{
+        line-height: 1.9;
+        font-size: 20px;
+        .icon{
+          display: inline-block;
+          vertical-align: middle;
+          width: 18px;
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+  }
+  .location-map{
+    padding-left: 2rem;
+  }
+  @include pad{
+    margin-bottom: 1rem;
+    .location-info,
+    .location-map{
+      width: 100%;
+      padding:10px 0;
+    }
+  }
+}
+
+// 標籤雲
 .itemTag{
   margin-bottom: .5rem;
   line-height: 1.5;
