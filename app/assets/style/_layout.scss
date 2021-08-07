@@ -1,0 +1,104 @@
+.section{
+    padding:1.5rem 2rem;
+}
+
+.wrap{
+    max-width:1280px;
+    width:100%;
+    margin:auto;
+    height:100%;
+    min-height:800px;
+    display: flex;
+    border:$color02 1px solid;
+}
+
+// 右側內容
+.sideContent{
+    flex:1;
+}
+
+.title-wrap{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom:1rem;
+    h4{
+        font-size: 24px;
+        font-weight:bold;
+    }
+    .modal-btn{
+        margin-left: 2rem;
+        i{
+            color: $color02;
+            margin-right: 5px;
+        }
+    }
+    .icon{
+        margin-left: auto;
+        a{
+            margin:0 10px;
+        }
+        i{
+            font-size: 18px;
+        }
+    }
+}
+
+// 列表
+.admin-table{
+    width: 100%;
+    border-collapse: collapse;
+    td,
+    th{
+        text-align: left;
+        padding:1rem .75rem
+    }
+    th{
+        border-bottom:1px solid black
+    }
+    td{
+        border-bottom: #ddd 1px solid;
+        &:last-child{
+            text-align: right;
+        }
+    }
+    .fas{
+        margin-left: 15px;
+    }
+}
+
+// Modal
+.modalCustomer {
+    .modal-content{
+        padding:.75rem 1.5rem;
+        border-radius:0;
+    }
+    .modal-header{
+        border-bottom:none;
+        padding-bottom: 0;
+    }
+    .close{
+        span{
+            font-size: 30px;
+            color: black;
+            font-weight: 100;
+        }
+    }
+    .title-wrap{
+        margin-bottom:0
+    }
+    .form-control{
+        border-radius:0;
+        border-color:#212529;
+        height:50px;
+    }
+    legend{
+        font-size:20px;
+        font-weight:bold;
+        margin-bottom:15px;
+    }
+    .fa-exclamation-triangle{
+        color:#DC3545;
+        margin-right:5px;
+    }
+}

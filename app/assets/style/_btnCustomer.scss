@@ -1,0 +1,16 @@
+.btn{
+    padding-left:2rem !important;
+    padding-right:2rem !important;
+    font-weight:600 !important;
+    &-close{
+        border-color:$color02 !important;
+        background-color:white !important;
+        color:$color02 !important;
+    }
+    
+    &-main{
+        border-color:$color02 !important;
+        background-color:$color02 !important;
+        color:white !important;
+    }
+}
