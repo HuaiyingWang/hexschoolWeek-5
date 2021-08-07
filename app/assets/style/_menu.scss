@@ -38,7 +38,7 @@
             &:hover,
             &.active{
                 a{
-                    color:$color02
+                    color:$color02 !important
                 }
                 &::before{
                     background:$color02

@@ -65,6 +65,11 @@
     .fas{
         margin-left: 15px;
     }
+    a{
+        &:hover{
+            color:$color02 !important
+        }
+    }
 }
 
 // Modal
@@ -87,10 +92,19 @@
     .title-wrap{
         margin-bottom:0
     }
+    label{
+        width: 100%;
+    }
     .form-control{
         border-radius:0;
         border-color:#212529;
         height:50px;
+        &.form-disabled{
+            background-color:white;
+            color:#CED4DA;
+            border-color:#CED4DA;
+            text-align: center;
+        }
     }
     legend{
         font-size:20px;
@@ -101,4 +115,39 @@
         color:#DC3545;
         margin-right:5px;
     }
+    .verTime{
+        float: right;
+    }
+    &.modalCustomerCheck{
+        .modal-header {
+            .close {
+                position: absolute;
+                right: 2.5rem;
+                z-index: 2;
+            }
+        }
+        
+        .memberCheckWrap{
+            display:flex;
+            .imgWrap{
+                position:relative;
+                width: 140px;
+                height: 140px;
+                background-position:center;
+                background-size:cover;
+            }
+            .txtWrap{
+                flex:1;
+                padding-left:1.25rem
+            }
+            .form-control{
+                border:none;
+                height: auto;
+            }
+            select{
+                margin-top:5px;
+            }
+        }
+    }
 }
+

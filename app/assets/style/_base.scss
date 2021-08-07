@@ -27,3 +27,10 @@
   .btn{
     border-radius:0 !important
   }
+
+  input,
+  select{
+    &:focus{
+      box-shadow:none !important
+    }
+  }
