@@ -24,6 +24,11 @@ img {
 .btn {
   border-radius: 0 !important; }
 
+input:focus,
+select:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+
 .section {
   padding: 1.5rem 2rem; }
 
@@ -82,6 +87,8 @@ img {
       text-align: right; }
   .admin-table .fas {
     margin-left: 15px; }
+  .admin-table a:hover {
+    color: #198754 !important; }
 
 .modalCustomer .modal-content {
   padding: .75rem 1.5rem;
@@ -99,10 +106,18 @@ img {
 .modalCustomer .title-wrap {
   margin-bottom: 0; }
 
+.modalCustomer label {
+  width: 100%; }
+
 .modalCustomer .form-control {
   border-radius: 0;
   border-color: #212529;
   height: 50px; }
+  .modalCustomer .form-control.form-disabled {
+    background-color: white;
+    color: #CED4DA;
+    border-color: #CED4DA;
+    text-align: center; }
 
 .modalCustomer legend {
   font-size: 20px;
@@ -112,6 +127,35 @@ img {
 .modalCustomer .fa-exclamation-triangle {
   color: #DC3545;
   margin-right: 5px; }
+
+.modalCustomer .verTime {
+  float: right; }
+
+.modalCustomer.modalCustomerCheck .modal-header .close {
+  position: absolute;
+  right: 2.5rem;
+  z-index: 2; }
+
+.modalCustomer.modalCustomerCheck .memberCheckWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .modalCustomer.modalCustomerCheck .memberCheckWrap .imgWrap {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background-position: center;
+    background-size: cover; }
+  .modalCustomer.modalCustomerCheck .memberCheckWrap .txtWrap {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-left: 1.25rem; }
+  .modalCustomer.modalCustomerCheck .memberCheckWrap .form-control {
+    border: none;
+    height: auto; }
+  .modalCustomer.modalCustomerCheck .memberCheckWrap select {
+    margin-top: 5px; }
 
 .sideMenu {
   width: 296px;
@@ -150,7 +194,7 @@ img {
       top: 0.7rem;
       background: transparent; }
     .sideMenu .link li:hover a, .sideMenu .link li.active a {
-      color: #198754; }
+      color: #198754 !important; }
     .sideMenu .link li:hover::before, .sideMenu .link li.active::before {
       background: #198754; }
   .sideMenu .memberName-area {
@@ -212,5 +256,9 @@ img {
     border-color: #198754 !important;
     background-color: #198754 !important;
     color: white !important; }
+  .btn-cancel {
+    border-color: #DC3545 !important;
+    background-color: white !important;
+    color: #DC3545 !important; }
 
 /*# sourceMappingURL=all.css.map */
